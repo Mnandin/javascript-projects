@@ -1,0 +1,275 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-family: muli;
+    position: relative;
+}
+
+#navbar-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-weight: 900;
+    background-color: white;
+    box-shadow: 1px 1px 10px ;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    background-color: #F7E9C0;
+
+}
+
+/*         ---------       hw1      ----------       */
+
+
+td {
+    border: 2px solid #D89A16;
+    padding: 5px 10px;
+    
+}
+
+.tableRows {
+    padding: 5px 0;
+}
+
+#regOuterContainer, .rating-body, .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    width: 70%; 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#regOuterContainer {
+    background-image: url('../images/registration.jpg');
+    
+}
+
+#registrationContainer {
+    text-align: center;
+    width: 50%;
+    background-color: rgba(209, 204, 207, 0.8);
+    display: flex;
+    justify-content: center;
+    height: auto;
+    align-items: center;
+    color: black;
+    font-family: muli;
+    height: 50%;
+    margin: auto 0;
+}
+
+.title {
+    height: 30%;
+    display: flex;
+    margin: 50px;
+    font-size: 30px;
+}
+
+h1{
+    color: #634807;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 3px solid #D89A16;
+    background: #F3E8CF;
+    color: #634807;
+    font-size: 20px;
+}
+
+/*        ------     hw2     -------      */
+
+form {
+    width: 80%;
+}
+
+.q1 {
+    margin: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 10px;
+    font-size: 13px;
+    position: relative;
+}
+
+.q1:nth-last-child(1) {
+    margin-bottom: 50px;
+}
+
+.q1 span {
+    position: absolute;
+    margin-top: 65px;
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    line-height: 120%;
+}
+
+.error {
+    color: red;
+}
+
+.valid {
+    color: green;
+}
+
+.validInput {
+    outline: 1px solid green;
+}
+
+#alert-img {
+    margin-right: 10px;
+    width: 16px;
+}
+
+input {
+    border-radius: 20px;
+    border: 1px solid gray;
+    padding: 10px 10px;
+    width: 100%;
+}
+
+input:focus {
+    outline: 2px solid black;
+}
+
+input:invalid {
+    outline: 1px solid red;
+    animation: shake 0.4s;
+}
+
+@keyframes shake {
+    25%{transform: translateX(-5px);}
+    50%{transform: translateX(5px);}
+    100%{transform: translateX(-5px);}
+}
+
+#registrationContainer h3 {
+    text-transform: uppercase;
+    font-size: 22px;
+    color: #333;
+    letter-spacing: 2px;
+    font-family: muli-bold;
+    margin-top: 50px;
+}
+
+/* ---------    h3     ----------  */
+
+.rating img {
+    width: 100px;
+    filter: grayscale(1);
+    cursor: pointer;
+}
+
+.rating img.highlight {
+    filter: grayscale(0);
+}
+
+.rating img:hover {
+    animation: bounce 0.4s;
+}
+
+@keyframes bounce {
+  100%{transform: translateY(-5px);}
+}
+
+
+.rating-body {
+    
+    background-image: url('../images/goldenBg.jpg');
+    
+}
+
+#ratingText {
+    color: rgba(102, 61, 0, 0.869);
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+@keyframes shake {
+    25%{transform: translateX(-5px);}
+    50%{transform: translateX(5px);}
+    100%{transform: translateX(-5px);}
+}
+
+/*   -----   hw4  -----    */
+
+
+
+/* .slideshow {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+
+.slide {
+    display: none;
+}
+
+.slide.is-active {
+    display: flex;
+}
+
+.slide-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.is-active {
+    display: block;
+}
+
+.image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    
+}
+
+.image-container img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+} */
+
+
